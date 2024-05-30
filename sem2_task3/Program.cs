@@ -4,19 +4,19 @@
 // 15  7 => нет, 1
 
 
-Console.WriteLine("ввод первого числа");
+Console.WriteLine("ввод первого числа");          
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("ввод второго числа");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-int result = num1 % num2;
+int result = num1 % num2;     //вводим переменную result и проверяем  на кратность
 
-if (result == 0)
+if (result == 0)  // если кратно
 {
-    Console.WriteLine("да, второе число является кратным первого");
+    Console.WriteLine("да, второе число является кратным первого"); // то выводим эту строку
 }
 else
 {
-    Console.WriteLine("нет, второе число не является кратным первого, остаток  = "  + result);
+    Console.WriteLine("нет, второе число не является кратным первого, остаток  = "  + result); //то выводим эту строку
 }
