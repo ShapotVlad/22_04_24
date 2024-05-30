@@ -9,14 +9,14 @@
 Console.WriteLine("ввод числа");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num >= 100  ||  num <= -100)
+if (num >= 100  ||  num <= -100) //диапозон числа от и до 
 {
 
-while (num > 999  || num < -999)
+while (num > 999  || num < -999) // цикл "пока" приводит число  к трехзначному числу
 {
   num = num/10;  
 }
-int result = num % 10;
+int result = num % 10; // вводим пременную для получения третьей цифры слева 
 
 Console.WriteLine($"Третья цифра слева = {result}");
 }
