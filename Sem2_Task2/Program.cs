@@ -6,19 +6,19 @@
 //    617 =>  
 
 
-Console.WriteLine("ввод трехзначного числа");
+Console.WriteLine("ввод трехзначного числа"); //ввод числа
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num >= 100 && num <= 999)
+if (num >= 100 && num <= 999) //диапозон числа 
 {
-    int seconddigit = num / 10 % 10;
-    int exponent = num % 10;
+    int seconddigit = num / 10 % 10; //ввод переменной 2 числа (754/10=75 % 10 = 5)
+    int exponent = num % 10; //ввод переменной третьей цифры (экспонента)
     int result = 1;
     int i = 0;
 
-    while (i < exponent)
+    while (i < exponent) //ввод в степень через цикл
     {
-        result = result * seconddigit;
+        result = result * seconddigit; // умножаем на себя до экспоненты
         i = i + 1;
     }
 
