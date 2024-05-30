@@ -4,17 +4,17 @@
 //a = 891 => 81
 
 
-Console.WriteLine("ввод трехзначного числа");
+Console.WriteLine("ввод трехзначного числа"); //ввод числа
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num >= 100 && num <= 999)
+if (num >= 100 && num <= 999) // проверка диапозона числа
 {
-    int firstdigit = num / 100;
-    int thiddigit = num % 10;
+    int firstdigit = num / 100;//вводим переменную первого числа целочисленное трехзначное число делим на 100
+    int thiddigit = num % 10;//вводим переменную для определения третьей цифры 
 
-    int result = firstdigit * 10 + thiddigit;
+    int result = firstdigit * 10 + thiddigit;//вводим переменную результат (первое число умножаем на 10 и прибавляем третью цифру)
 
-    Console.WriteLine($"вывод результата = {result}");
+    Console.WriteLine($"вывод результата = {result}");// вывод на консоль
 }
 else
 {
